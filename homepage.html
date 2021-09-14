@@ -608,7 +608,7 @@
                   <section id="fourth-section">
                     <div class="container" style="margin-bottom: 64px;">
                       <div class="d-flex justify-content-between mt-3">
-                        <h5 style="width: bold;">Songs from API's</h5>
+                        <button class="btn btn-primary" onclick="listAlbum()">list albums</button>
                         <p><span class="text-muted"> SEE All</span></p>
                       </div>
                       <div class="row py-1 d-flex">
@@ -673,7 +673,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-     window.onload = () => {
+     const listAlbum = () => {
 
 
         fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=metallica", {
